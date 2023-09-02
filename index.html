@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="container mx-auto my-10">
+        <nav class="grid grid-cols-3 items-center px-3">
+            <img src="Logo.png" alt="">
+            <button onclick="handleSorting()" class="btn font-semibold w-32 ml-3 md:ml-16 lg:ml-32  ">Sort by
+                view</button>
+            <button onclick="blogFunction()" class="btn btn-error w-20 ml-10 md:ml-40 lg:ml-72 text-white">Blog</button>
+
+        </nav>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    </header>
+    <main class="container mx-auto  ">
+        <section>
+            <div id="category-container">
+
+            </div>
+            <div id="no-content" class="my-20 hidden ">
+                <img class="mx-auto" src="Icon.png" alt="">
+                <h1 class="font-semibold text-3xl text-center">Oops!! Sorry, There is no <br> content here</h1>
+            </div>
+            <!-- for showing category details -->
+            <div id="category-detail-container">
+
+            </div>
+        </section>
+
+
+    </main>
+    <!--javascript file link  -->
+    <script src="script.js"></script>
+</body>
+
+</html>

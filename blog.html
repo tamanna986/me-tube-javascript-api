@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="container mx-auto my-10">
+        <nav class="grid grid-cols-3 items-center px-3">
+            <img src="Logo.png" alt="">
+            <h1 class="text-xl md:text-4xl font-bold text-center text-red-500 ">Blog Questions</h1>
+
+            <button onclick="homeFunction()" class="btn btn-error w-20 ml-10 md:ml-36 lg:ml-80 text-white">Home</button>
+
+        </nav>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+
+
+        <div>
+            <div class="space-y-6 container mx-auto">
+                <h2 class="font-semibold text-xl px-10 lg:px-28">*Discuss the scope of var, let, and const</h2>
+                <div class="card  bg-base-100 shadow-xl px-10 lg:px-20">
+                    <figure><img src="js1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+
+                        <p>overview of the scope of var, let, and const in JavaScript: <br>
+                        <ul class="space-y-4">
+                            <li class="font-semibold text-lg">
+                                1. var
+                                <ul class="font-normal">
+                                    <li>i.Function-scoped: Variables are accessible within the function they are
+                                        declared in.</li>
+                                    <li>ii.Hoisting: Variables are hoisted to the top of their containing function.</li>
+                                    <li>iii.No block scope: Variables are not limited to the block they are declared in.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="font-semibold text-lg">
+                                2. let
+                                <ul class="font-normal">
+                                    <li>i.Block-scoped: Variables are accessible only within the block they are declared
+                                        in.</li>
+                                    <li>ii.Hoisting: Variables are hoisted within the block but not initialized until
+                                        their declaration.</li>
+                                    <li>iii.Reassignment: Variables can be reassigned after their initial declaration.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="font-semibold text-lg">
+                                3. Const
+                                <ul class="font-normal">
+                                    <li>i.Block-scoped: Variables are accessible only within the block they are declared
+                                        in.</li>
+                                    <li>ii.Hoisting: Variables are hoisted within the block but not initialized until
+                                        their declaration.</li>
+                                    <li>iii.Immutable values: Variables cannot be reassigned once they are initialized.
+                                        However, for objects and arrays, their properties or elements can be modified.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        .</p>
+                        <div class="card-actions justify-end">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="space-y-6 container mx-auto my-20">
+                <h2 class="font-semibold text-xl px-10 lg:px-28">*Tell us the use cases of null and undefined</h2>
+                <div class="card  bg-base-100 shadow-xl px-10 lg:px-20">
+                    <figure><img src="js3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+
+                        <p>Here are the common use cases of null and undefined in JavaScript: <br>
+                        <ul class="space-y-4">
+                            <li class="font-semibold text-lg">
+                                1. undefined
+                                <ul class="font-normal">
+                                    <li>i.Default values for uninitialized variables.</li>
+                                    <li>ii.Return values from functions that don't explicitly return anything.</li>
+                                    <li>iii.Indicating the absence of a property in an object.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="font-semibold text-lg">
+                                2. Null
+                                <ul class="font-normal">
+                                    <li>i.Explicitly indicating that a variable or object property has no value.</li>
+                                    <li>ii.Resetting a variable or property to an empty state.</li>
+                                    <li>iii.Checking if a variable has been intentionally set to no value in conditional
+                                        statements.
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        .</p>
+                        <div class="card-actions justify-end">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="space-y-6 container mx-auto my-20">
+                <h2 class="font-semibold text-xl px-10 lg:px-28">*What do you mean by REST API?</h2>
+                <div class="card  bg-base-100 shadow-xl px-10 lg:px-20">
+                    <figure></figure>
+                    <div class="card-body">
+
+                        <p>In short, a REST API (Representational State Transfer Application Programming Interface) is a
+                            set of rules and conventions for building and interacting with web services using standard
+                            HTTP methods (GET, POST, PUT, DELETE). It allows clients (e.g., web browsers or mobile apps)
+                            to request and manipulate data from a server in a standardized way, typically using JSON or
+                            XML for data representation. REST APIs are stateless, meaning each request from a client to
+                            a server contains all the information needed, and they are widely used for web and mobile
+                            application development.
+                        </p>
+                        <div class="card-actions justify-end">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <!-- script for going to homepage -->
+    <script>
+        function homeFunction() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>
